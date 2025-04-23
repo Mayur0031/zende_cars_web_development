@@ -1,0 +1,65 @@
+
+.review-video-card {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 260px;
+    transition: width 0.4s ease-in-out, transform 0.4s ease;
+    /* Add transform transition */
+    height: auto;
+}
+
+.review-video-card:hover {
+    width: 900px;
+    /* Expands to reveal right sidebar */
+}
+
+.review-video {
+    flex: 0 0 100px;
+    /* Reel stays fixed size */
+    aspect-ratio: 9 / 16;
+    width: 100%;
+    border: none;
+}
+
+.review-sidebar {
+    width: 0;
+    overflow: hidden;
+    background-color: rgba(232, 232, 232, 0.85);
+    border-color: black;
+    color: #000000;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: width 0.4s ease, opacity 0.4s ease;
+}
+
+.review-video-card:hover .review-sidebar {
+    width: 100%;
+    opacity: 1;
+}
+
+/*  */
+.review-wrapper {
+    display: flex;
+    width: 100vw;
+    padding: 0 2vw;
+    box-sizing: border-box;
+    align-items: center;
+  }
+  
+  .review-slider-row {
+    width: 90vw;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+
+  

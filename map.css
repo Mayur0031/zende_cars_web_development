@@ -1,0 +1,19 @@
+.map-cotainer {
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    padding: 20px;
+    height: 100%;              /* Ensures the container takes full height */
+    position: relative;       /* Important for positioning the button */
+}
+
+.map-cotainer iframe {
+    max-width: 100%;
+    width: 80vw;              /* Flexible width relative to the viewport */
+    height: 60vh;             /* Flexible height relative to the viewport */
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 8px 24px rgba(0, 0, 0, 0.1);
+    /* Optional: add shadow */
+}
+

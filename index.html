@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zende Car Accessories</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="nav_style.css">
+    <link rel="stylesheet" href="video.css">
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="services_swaper.css">
+    <link rel="stylesheet" href="review.css">
+    <link rel="stylesheet" href="map.css">
+    <link rel="stylesheet" href="footer.css">
+
+</head>
+
+<body>
+
+    <!-- navbar section   -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top"">
+        <div class="container-fluid custom-padding">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                <img src="images/LOGO_PNG_FORM.png" alt="Logo" style="height: 40px;">
+                <span>Zende Car Accessories</span>
+            </a>
+
+            <!-- Button to trigger the offcanvas -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Offcanvas -->
+            <div class="offcanvas offcanvas-end custom-offcanvas" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav text-end text-sm-center ms-auto gap-4">
+                        <li class="nav-item nav-link active"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services-section"
+                                id="scrollToServices">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#review-section">Reviews</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#location-section">Location</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="#">About Us</a></li> -->
+                        <li class="nav-item "><a class="nav-link" href="#contact-section">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- video section  -->
+    <!-- video title  -->
+    <!-- <div class="video-title-container">
+        <div class="typewriter-text" id="videoTitle">Premium Car Accessories Showcase</div>
+      </div> -->
+
+    <!-- video bar  -->
+    <!-- <div class="custom-video-container shadow-wrapper">
+        <iframe 
+          src="https://www.youtube.com/embed/GZogr6vjmKM?rel=0&modestbranding=1&controls=1&showinfo=0"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div> -->
+
+    <!--  -->
+    <div class="video-title-container">
+        <span id="videoTitle" class="typewriter-text"><h2 class="fw-bold heading-highlight">
+            <i class="bi bi-stars me-2 text-warning"></i>Latest Updates<i
+                class="bi bi-stars ms-2 text-warning"></i>
+            <span class="heading-underline"></span>
+        </h2></span>
+    </div>
+
+    <div class="video-gallery-container">
+        <button class="nav-btn left-btn"><i class="bi bi-arrow-left-circle-fill fs-3"></i></button>
+
+        <!-- <button id="reviewPrevBtn" class="btn btn-outline-dark me-2 nav-btn left-btn">
+            <i class="bi bi-arrow-left-circle-fill fs-3"></i>
+        </button> -->
+
+        <div class="video-gallery" id="videoGallery">
+            <div class="custom-video-container"><iframe
+                    src="https://www.youtube.com/embed/2vKFdsvYdNg?rel=0&modestbranding=1" allowfullscreen></iframe>
+            </div>
+            <div class="custom-video-container"><iframe
+                    src="https://www.youtube.com/embed/GZogr6vjmKM?rel=0&modestbranding=1" allowfullscreen></iframe>
+            </div>
+            <div class="custom-video-container"><iframe
+                    src="https://www.youtube.com/embed/LGTQVcwwJF0?rel=0&modestbranding=1" allowfullscreen></iframe>
+            </div>
+            <div class="custom-video-container"><iframe
+                    src="https://www.youtube.com/embed/cuTn9G4CI6g?rel=0&modestbranding=1" allowfullscreen></iframe>
+            </div>
+            <div class="custom-video-container"><iframe
+                    src="https://www.youtube.com/embed/xHOx_KuC0Lo?rel=0&modestbranding=1" allowfullscreen></iframe>
+            </div>
+
+            <div class="custom-video-container"><iframe
+                    src="https://www.youtube.com/embed/cSMbBnghRzI?rel=0&modestbranding=1" allowfullscreen></iframe>
+            </div>
+            <div class="custom-video-container"><iframe
+                    src="https://www.youtube.com/embed/J9HNE2Sv-jk?rel=0&modestbranding=1" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <button class="nav-btn right-btn"><i class="bi bi-arrow-right-circle-fill fs-3"></i></button>
+    </div>
+    <div class="video-dots" id="videoDots"></div>
+
+
+    <!-- 3d car model section -->
+    <!-- Car Select Dropdown -->
+    <div class="text-center my-5">
+        <h2 class="fw-bold heading-highlight">
+            <i class="bi bi-stars me-2 text-warning"></i>Car Model View <i
+                class="bi bi-stars ms-2 text-warning"></i>
+            <span class="heading-underline"></span>
+        </h2>
+    </div>
+    <div class="container-fluid d-flex flex-column align-items-center my-5">
+        <label for="carSelect" class="h4 mb-3 text-center">Choose a car:</label>
+        <select id="carSelect" class="form-select w-50">
+            <option value="tata_punch_tropical_mist">Tata Punch</option>
+            <option value="tata_safari">Tata Safari</option>
+            <option value="dzire">Maruti Suzuki Swift Dzire</option>
+            <option value="brezza">Maruti Suzuki Vitara Brezza</option>
+            <option value="vitara">Grand Vitara</option>
+            <option value="tiago">Tata Tiago</option>
+        </select>
+    </div>
+    
+    <!-- 3D car model section -->
+    <div class="container-fluid d-flex flex-column align-items-center my-5">
+        <model-viewer id="carModel" src="images/tata_punch_tropical_mist.glb" alt="3D model of a car" auto-rotate
+            camera-controls disable-ar shadow-intensity="1"
+            style="width: 80%; height: 60vh; display: block; margin: 0 auto;" camera-orbit="270deg 90deg 1.3m">
+        </model-viewer>
+    </div>
+
+
+    <!-- Services -->
+    <div id="services-section" class="container text-center">
+        <div class="text-center my-5">
+            <h2 class="fw-bold heading-highlight">
+                <i class="bi bi-stars me-2 text-warning"></i>Our Premium Services <i
+                    class="bi bi-stars ms-2 text-warning"></i>
+                <span class="heading-underline"></span>
+            </h2>
+        </div>
+    </div>
+    <div class="container mt-4" >
+        <div class="row g-4">
+            <!-- Left side card -->
+            <div class="col-md-6">
+                <div class="card fixed-card left-service">
+                    <img src="/images/services/Seatcover.png" alt="Seat Covers">
+                    <div class="overlay">Seat Covers</div>
+                </div>
+            </div>
+            <!-- Right side card -->
+            <div class="col-md-6">
+                <div class="card fixed-card right-service">
+                    <img src="/images/services/Andriods.png" alt="Android Players">
+                    <div class="overlay">Android Players</div>
+                </div>
+            </div>
+            <!-- Next row, left card -->
+            <div class="col-md-6">
+                <div class="card fixed-card left-service">
+                    <img src="/images/services/HeadLights.png" alt="Headlights and Fog Lamps">
+                    <div class="overlay">Headlights And Fog Lamps</div>
+                </div>
+            </div>
+            <!-- Next row, right card -->
+            <div class="col-md-6">
+                <div class="card fixed-card right-service">
+                    <img src="/images/services/Speakers.jpg" alt="Sound Systems">
+                    <div class="overlay">Sound Systems</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--  -->
+    <!-- heding of slider -->
+    <div class="text-center my-5" >
+        <h2 class="fw-bold heading-highlight">
+            <i class="bi bi-stars me-2 text-warning"></i>More Product Services<i
+                class="bi bi-stars ms-2 text-warning"></i>
+            <span class="heading-underline"></span>
+        </h2>
+    </div>
+
+    <!-- slider  -->
+    <div class="container my-4 text-center position-relative">
+        <div class="d-flex justify-content-center align-items-center">
+            <button id="prevBtn" class="btn btn-outline-dark me-2">
+                <i class="bi bi-arrow-left-circle-fill fs-3"></i>
+            </button>
+
+            <div id="cardTrack" class="card-track"></div>
+
+
+            <button id="nextBtn" class="btn btn-outline-dark ms-2">
+                <i class="bi bi-arrow-right-circle-fill fs-3"></i>
+            </button>
+        </div>
+    </div>
+
+
+
+    <!-- review section -->
+    <!-- <div class="container my-5">
+        <h2 class="fw-bold text-center mb-4 position-relative d-inline-block review-heading">
+          <i class="bi bi-play-circle-fill text-danger me-2"></i>Reviews
+          <span class="review-underline"></span>
+        </h2>
+      
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-4">
+            <div class="review-video-card">
+              <iframe class="review-video" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+              <div class="review-sidebar">
+                <p class="mb-2">"Amazing service quality and quick response!"</p>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+      </div> -->
+
+      <!-- heading of review -->
+      <div class="text-center my-5" id="review-section">
+        <h2 class="fw-bold heading-highlight">
+            <i class="bi bi-stars me-2 text-warning"></i>Customer Reviews <i
+                class="bi bi-stars ms-2 text-warning"></i>
+            <span class="heading-underline"></span>
+        </h2>
+    </div>
+
+    <div class="review-wrapper d-flex align-items-center justify-content-between gap-5">
+
+        <!-- Left Arrow -->
+        <!-- <button id="reviewPrevBtn" class="review-arrow-btn">
+    <i class="bi bi-arrow-left-circle-fill fs-3"></i>
+  </button> -->
+
+        <!-- <button id="reviewPrevBtn" class="btn btn-outline-dark me-2">
+            <i class="bi bi-arrow-left-circle-fill fs-3"></i>
+        </button> -->
+
+
+        <!-- Reviews Section (90vw) -->
+        <div class="review-slider-row d-flex justify-content-center gap-4 flex-nowrap">
+            <!-- Review Cards -->
+            <div class="review-video-card">
+                <iframe class="review-video" src="https://www.youtube.com/embed/BZBAhDUhWmE" frameborder="0"
+                    allowfullscreen></iframe>
+
+                <div class="review-sidebar">
+                    <p class="mb-2">"
+                        मी रील पाहून आलो. माझ्या गाडीचं काम एकदम छान झालं, काहीही तक्रार नाही. रेट्स सुद्धा योग्य आहेत.
+                        इथे इतरांना सुद्धा सांगणार की झेंडे कार अ‍ॅक्सेसरीजमध्ये गाडीचं काम करून घ्या. धन्यवाद! ~~
+                        Brezza Owner</p>
+                </div>
+            </div>
+
+            <div class="review-video-card">
+                <iframe class="review-video" src="https://www.youtube.com/embed/810OFz-vcJ8" frameborder="0"
+                    allowfullscreen></iframe>
+
+
+                <div class="review-sidebar">
+                    <p class="mb-2">मी आधी ३-४ ठिकाणी चौकशी केली होती, पण झेंडे अ‍ॅक्सेसरीजमध्ये आल्यावर कोटेशन,
+                        प्रॉडक्टची क्वालिटी, फिटिंग सगळंच एकदम प्रोफेशनल वाटलं. दरही रिझनेबल आहेत. मी स्वतः थांबून काम
+                        पाहिलं एकदम परफेक्ट. त्यामुळे मी सगळ्यांना सांगतो, जर गाडीचं इन-आऊट सर्विसिंग आणि अ‍ॅक्सेसरीज
+                        फिटिंग हवं असेल, तर झेंडे अ‍ॅक्सेसरीजला नक्की या! ~~ Tiago Owner</p>
+                </div>
+            </div>
+
+            <!-- <div class="review-video-card">
+                <iframe class="review-video" src="https://www.youtube.com/embed/XX85eWrve9w" frameborder="0" allowfullscreen></iframe>
+
+
+                <div class="review-sidebar">
+                    <p class="mb-2">"Amazing service quality and quick response!"</p>
+                </div>
+            </div> -->
+
+            <div class="review-video-card">
+                <iframe class="review-video" src="https://www.youtube.com/embed/KuUrLfJNJHQ" frameborder="0"
+                    allowfullscreen></iframe>
+
+
+                <div class="review-sidebar">
+                    <p class="mb-2">नवीन गाडी घेतल्यानंतर मी झेंडे कार अ‍ॅक्सेसरीजला भेट दिली. त्यांनी मला रिझनेबल
+                        रेटमध्ये ब्रँडेड अ‍ॅक्सेसरीज लावून दिल्या. क्वालिटी एकदम उत्तम होती आणि सर्व्हिसही व्यवस्थित
+                        मिळाली. त्यामुळे मी सगळ्यांना सांगतो – एकदा झेंडे अ‍ॅक्सेसरीजला नक्की भेट द्या, ब्रँडेड वस्तूंवर
+                        चांगले डिल्स आणि सर्व्हिस दोन्ही मिळतात! -- Brezza Owner</p>
+                </div>
+            </div>
+
+            <!-- <div class="review-video-card">
+                <iframe class="review-video" src="https://www.youtube.com/embed/jNrQbI8WPMg" frameborder="0" allowfullscreen></iframe>
+
+                <div class="review-sidebar">
+                    <p class="mb-2">"Amazing service quality and quick response!"</p>
+                </div>
+            </div> -->
+            <!-- Repeat cards as needed -->
+        </div>
+
+        <!-- Right Arrow -->
+        <!-- <button id="reviewNextBtn" class="review-arrow-btn">
+            <i class="bi bi-arrow-right-circle-fill fs-3"></i>
+        </button> -->
+        <!-- <button id="reviewNextBtn" class="btn btn-outline-dark ms-2">
+            <i class="bi bi-arrow-right-circle-fill fs-3"></i>
+        </button> -->
+    </div>
+
+
+    <!-- location -->
+    <!-- heading of location -->
+    <div class="text-center my-5" id="location-section">
+        <h2 class="fw-bold heading-highlight">
+            <i class="bi bi-stars me-2 text-warning"></i>Get Location <i
+                class="bi bi-stars ms-2 text-warning"></i>
+            <span class="heading-underline"></span>
+        </h2>
+    </div>
+
+    <div class="map-cotainer">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3633.576183761373!2d73.81982907501533!3d18.606357682503916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9000e30c54d%3A0xa6d2b5be82fc4616!2sZENDE%20CAR%20ACCESSORIES!5e1!3m2!1sen!2sin!4v1745441674876!5m2!1sen!2sin" width="1200" height="800" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    
+
+    <!-- footer -->
+<!-- Footer -->
+<footer>
+    <div class="footer-container" id="contact-section">
+        <!-- Footer Header Details -->
+        <div class="footer-section footer-header">
+            <h2>ZENDE Car Accessories</h2>
+            <p>Providing the best in car accessories and services.</p>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-section footer-social">
+            <h3>Follow Us</h3>
+            <ul>
+                <li><a href=https://www.youtube.com/@ZendeCarAccessories" target="_blank">Youtube</a></li>
+                
+                <li><a href="https://www.instagram.com/zende_car_accessories/" target="_blank">Instagram</a></li>
+
+                <li><a href="https://wa.me/9168822777" target="_blank">watsapp</a></li>
+            </ul>
+        </div>
+
+        <!-- Location and Contact Details -->
+        <div class="footer-section footer-contact">
+            <h3>Contact Us</h3>
+            <p><strong>Location 📍:</strong>Opp. Sagar corner, old Mumbai-pune highway,Nashik Phata,Pune</p>
+            <p><strong>Phone ☎️ :</strong> 9168822777 / 8208667746</p>
+            <p><strong>Email:</strong> akshayzende7777@.com</p>
+        </div>
+
+        <!-- Other Required Fields -->
+        <div class="footer-section footer-additional">
+            <h3>Business Hours</h3>
+            <ul>
+                <li>tue - sun: 9:00 AM - 8:00 AM</li>
+                <li>Monday: Closed</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <script src="nav_script.js"></script>
+    <script src="video_script.js"></script>
+    <script src="3d_model.js"></script>
+    <script src="services.js"></script>
+    <script src="map.js"></script>
+    <script src="services_swaper.js"></script>
+</body>
+
+</html>
